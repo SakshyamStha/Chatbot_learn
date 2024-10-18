@@ -1,0 +1,29 @@
+2024-10-17 13:57:51,776 - INFO - C:\Users\ACER\OneDrive\Desktop\ecom_chatbot\chatbot\views.py changed, reloading.
+2024-10-17 13:58:16,623 - INFO - C:\Users\ACER\OneDrive\Desktop\ecom_chatbot\chatbot\views.py changed, reloading.
+2024-10-17 13:58:21,618 - INFO - C:\Users\ACER\OneDrive\Desktop\ecom_chatbot\chatbot\views.py changed, reloading.
+2024-10-17 13:58:55,640 - INFO - C:\Users\ACER\OneDrive\Desktop\ecom_chatbot\chatbot\views.py changed, reloading.
+2024-10-17 13:59:57,047 - INFO - C:\Users\ACER\OneDrive\Desktop\ecom_chatbot\chatbot\views.py changed, reloading.
+2024-10-17 14:00:01,219 - INFO - C:\Users\ACER\OneDrive\Desktop\ecom_chatbot\chatbot\views.py changed, reloading.
+2024-10-17 14:00:04,499 - INFO - C:\Users\ACER\OneDrive\Desktop\ecom_chatbot\chatbot\views.py changed, reloading.
+2024-10-17 14:00:06,518 - INFO - C:\Users\ACER\OneDrive\Desktop\ecom_chatbot\chatbot\views.py changed, reloading.
+2024-10-17 14:00:14,821 - INFO - User message: hi
+2024-10-17 14:00:32,584 - INFO - User message: i want to make an order for product 1
+2024-10-17 14:00:32,616 - ERROR - Internal Server Error: /chatbot/
+Traceback (most recent call last):
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\ecom_chatbot\chatbot\views.py", line 54, in chatbot_response
+    response = get_product_details(product_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\OneDrive\Desktop\ecom_chatbot\chatbot\views.py", line 79, in get_product_details
+    if product["name"].lower() == product_name.lower():
+                                  ^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'lower'
+2024-10-17 14:00:42,847 - INFO - User message: 
+2024-10-17 14:01:06,619 - INFO - User message: 1
+2024-10-17 14:01:30,446 - INFO - User message: wireless headphones
+2024-10-17 14:01:42,794 - INFO - C:\Users\ACER\OneDrive\Desktop\ecom_chatbot\chatbot\views.py changed, reloading.
